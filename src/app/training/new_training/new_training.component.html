@@ -1,0 +1,11 @@
+<body>
+  <form #f="ngForm" (ngSubmit)="onsubmit(f)">
+    <mat-form-field>
+      <mat-label>Chose Training</mat-label>
+      <mat-select ngModel name="training">
+        <mat-option *ngFor="let exercise of exercises" [value]="exercise.id">{{exercise.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button type="submit" >Start</button>
+  </form>
+</body>

@@ -1,0 +1,17 @@
+<body>
+  <mat-tab-group *ngIf="active">
+    <mat-tab label="New Train">
+      <ng-template  mat-tab-label>
+        <span style="color: blue;">New Training</span>
+      </ng-template>
+      <app-new_training (act)="active = false"> </app-new_training>
+  </mat-tab>
+    <mat-tab label="Past Train">
+      <ng-template  mat-tab-label>
+        <span style="color: blue;">Past Training</span>
+      </ng-template>
+      <app-past_training></app-past_training>
+    </mat-tab>
+  </mat-tab-group>
+  <app-Current_training *ngIf="!active" (actt)="active = true"></app-Current_training>
+</body>

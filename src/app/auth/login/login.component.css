@@ -1,0 +1,55 @@
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 80%;
+  gap: 0.1rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+mat-label{
+  color:black
+}
+mat-form-field{
+  width: 80vw;
+}
+
+.data{
+  color: black;
+}
+h1{
+  color: white;
+  padding-bottom: 8vw;
+}
+p{
+  color: white;
+}
+hr{
+  width: 100%;
+}
+button{
+  width: 50vw;
+  font-size: larger;
+  border-radius: 40px;
+  transition: all .40s ease;
+  margin-bottom: 2vh;
+}
+.icons{
+  display: flex;
+  gap: 1rem;
+}
+i{
+  color: white;
+  font-size: 30px;
+}
+

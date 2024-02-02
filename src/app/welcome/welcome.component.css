@@ -1,0 +1,70 @@
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://img.freepik.com/premium-photo/muscular-healthy-handsome-man-doing-battle-rope-exercise-modern-gym_232070-6461.jpg');
+  background-size: cover;
+  opacity: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.words{
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+h1 {
+  font-family:'El Messiri', sans-serif;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  transition: all .40s ease;
+}
+h1:hover{
+    transform: translateX(-7px);
+    color: red;
+    filter: brightness(80%);
+    transition: 0.4s;
+
+}
+
+.cred{
+  width: 350px;
+  height: 30vh;
+  position: absolute;
+  bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.start{
+  width: 90vw;
+  height: 8vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  font-size: larger;
+  font-weight:500;
+  align-items: center;
+  justify-content: center;
+  font-family:'El Messiri', sans-serif;
+  transition: .40s ease all;
+}
+.start:hover{
+  background-color: red;
+  filter: brightness(80%);
+  transition: 0.4s;
+}
+p{
+  font-family:'El Messiri', sans-serif;
+  color: white;
+}
+

@@ -1,0 +1,28 @@
+<body>
+
+  <h1>Fitness App</h1>
+  <form [formGroup]="myform" (ngSubmit)="senddata()">
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input #em type="email" formControlName="email" matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="!myform.value.email.valid">you Should enter your mail</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter your Password</mat-label>
+      <input #pass formControlName="password" type="password" min="4" matInput placeholder="Enter your password" required>
+      <mat-error *ngIf="!myform.value.password.valid">it must be more than 4 characters</mat-error>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" >Sign IN</button>
+  </form>
+
+  <hr>
+  <p>or</p>
+  <hr>
+
+  <div class="icons">
+    <i class='bx bxl-facebook-circle'></i>
+    <i class='bx bxl-google'></i>
+    <i class='bx bxl-twitter'></i>
+  </div>
+
+</body>

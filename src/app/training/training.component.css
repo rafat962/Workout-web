@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+  opacity: 80%;
+  width: 100%;
+
+}
+mat-tab{
+  color: red;
+  background-color: red;
+
+}
+mat-tab-group{
+  height: 100vh;
+}
+ng-template{
+  color: white;
+  background-color: red;
+
+}

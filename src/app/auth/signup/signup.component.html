@@ -1,0 +1,40 @@
+<body>
+
+  <h1>Fitness App</h1>
+  <form [formGroup]="myform" (ngSubmit)="senddata()">
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input #em type="email" formControlName="email" matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="!myform.value.email.valid">you Should enter your mail</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter your Password</mat-label>
+      <input #pass formControlName="password" type="password" min="4" matInput placeholder="Enter your password" required>
+      <mat-error *ngIf="!myform.value.password.valid">it must be more than 4 characters</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Confirm Password</mat-label>
+      <input #confirm formControlName="confirmPassword" type="password" matInput placeholder="Confirm your password" required>
+      <mat-error *ngIf="myform.value.confirmPassword !== myform.value.password">it must be like Password</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Choose your birthDay</mat-label>
+      <input  formControlName="date" matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" >Sign Up</button>
+  </form>
+
+  <hr>
+  <p>or</p>
+  <hr>
+
+  <div class="icons">
+    <i class='bx bxl-facebook-circle'></i>
+    <i class='bx bxl-google'></i>
+    <i class='bx bxl-twitter'></i>
+  </div>
+
+</body>
